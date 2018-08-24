@@ -43,10 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
-    <Compile Include="IWeaponStrategy.cs" />
+    <Compile Include="implementation\GunStrategy.cs" />
+    <Compile Include="implementation\NoWeaponStrategy.cs" />
+    <Compile Include="interfaces\IWeaponStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SwordStrategy.cs" />
+    <Compile Include="implementation\SwordStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

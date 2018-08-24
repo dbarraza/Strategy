@@ -1,4 +1,7 @@
-﻿namespace StrategyPattern
+﻿using StrategyPattern.implementation;
+using StrategyPattern.interfaces;
+
+namespace StrategyPattern
 {
     //The Context
     public class Character
@@ -9,6 +12,17 @@
         public void ChangeWeapon(IWeaponStrategy weapon)
         {
             _weapon = weapon;
+        }
+
+        public Character(string name)
+        {
+            Name = name;
+            _weapon = new NoWeaponStrategy();
+        }
+
+        public void Atack()
+        {
+            _weapon.Atack();
         }
 
 
